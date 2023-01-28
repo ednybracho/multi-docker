@@ -19,8 +19,8 @@ jobs:
       - run: docker build -t bebemo/multi-worker ./worker
 
       - run: docker push bebemo/multi-client
-      - run: docker push bebemo/server
-      - run: docker push bebemo/nginx
+      - run: docker push bebemo/multi-server
+      - run: docker push bebemo/multi-nginx
       - run: docker push bebemo/multi-worker
 
       - name: Generate deployment package
